@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniela Quispe | Portafolio Profesional</title>
+  <title>Daniela Quispe | Portafolio de Ingeniería en Software</title>
   
-  <!-- Fuente Google Font (Inter & Fira Code) -->
+  <!-- Fuentes Google Fonts (Inter & Fira Code) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <style>
     :root {
       --bg-dark: #0b0f19;
-      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card: rgba(17, 24, 39, 0.85);
       --border-color: rgba(255, 20, 147, 0.2);
       --primary: #ff1493;
       --secondary: #7b2cbf;
@@ -41,7 +41,7 @@
       overflow-x: hidden;
     }
 
-    /* Fondo animado de luz */
+    /* Luces de fondo */
     body::before {
       content: '';
       position: fixed;
@@ -49,7 +49,7 @@
       left: -10%;
       width: 50vw;
       height: 50vw;
-      background: radial-gradient(circle, rgba(123, 44, 191, 0.15) 0%, rgba(0,0,0,0) 70%);
+      background: radial-gradient(circle, rgba(123, 44, 191, 0.18) 0%, rgba(0,0,0,0) 70%);
       z-index: -1;
       pointer-events: none;
     }
@@ -61,7 +61,7 @@
       right: -10%;
       width: 50vw;
       height: 50vw;
-      background: radial-gradient(circle, rgba(255, 20, 147, 0.12) 0%, rgba(0,0,0,0) 70%);
+      background: radial-gradient(circle, rgba(255, 20, 147, 0.15) 0%, rgba(0,0,0,0) 70%);
       z-index: -1;
       pointer-events: none;
     }
@@ -71,7 +71,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(11, 15, 25, 0.85);
+      background: rgba(11, 15, 25, 0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       z-index: 1000;
@@ -111,9 +111,8 @@
       color: var(--primary);
     }
 
-    /* Contenedores */
     .container {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
@@ -170,9 +169,29 @@
     }
 
     .hero-subtitle {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: var(--text-muted);
       margin-bottom: 2rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .stat-item h4 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
     }
 
     .hero-buttons {
@@ -214,11 +233,11 @@
       border-color: rgba(255, 255, 255, 0.2);
     }
 
-    /* Foto de Perfil con Marco Anidado */
+    /* Foto de Perfil */
     .hero-avatar-wrapper {
       position: relative;
-      width: 280px;
-      height: 280px;
+      width: 290px;
+      height: 290px;
       flex-shrink: 0;
     }
 
@@ -227,8 +246,8 @@
       inset: -5px;
       background: var(--gradient-brand);
       border-radius: 50%;
-      filter: blur(15px);
-      opacity: 0.6;
+      filter: blur(18px);
+      opacity: 0.65;
     }
 
     .avatar-img {
@@ -265,8 +284,8 @@
       margin-bottom: 3rem;
     }
 
-    /* Cards de Info (Sobre mí) */
-    .about-grid {
+    /* Grid General de Tarjetas */
+    .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
@@ -287,7 +306,7 @@
     }
 
     .card h3 {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
       display: flex;
       align-items: center;
@@ -301,7 +320,7 @@
     .card ul li {
       margin-bottom: 0.75rem;
       color: var(--text-muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .card ul li strong {
@@ -311,21 +330,24 @@
     /* Grid de Habilidades */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.2rem;
     }
 
     .skill-card {
       background: var(--bg-card);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 1.2rem;
+      padding: 1.5rem;
       border-radius: 10px;
     }
 
     .skill-card h4 {
       color: var(--primary);
-      margin-bottom: 0.8rem;
-      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .skill-tags {
@@ -337,7 +359,7 @@
     .tag {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 0.3rem 0.7rem;
+      padding: 0.35rem 0.75rem;
       border-radius: 6px;
       font-size: 0.8rem;
       font-family: 'Fira Code', monospace;
@@ -347,7 +369,7 @@
     /* Grid de Proyectos */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 1.8rem;
     }
 
@@ -366,7 +388,7 @@
 
     .project-badge {
       font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
+      padding: 0.2rem 0.65rem;
       border-radius: 20px;
       font-weight: 600;
     }
@@ -379,6 +401,17 @@
       color: var(--text-muted);
       font-size: 0.9rem;
       margin-bottom: 1.2rem;
+    }
+
+    .project-features {
+      margin-bottom: 1.2rem;
+      padding-left: 1.2rem;
+    }
+
+    .project-features li {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 0.4rem;
     }
 
     /* Footer */
@@ -398,6 +431,10 @@
         padding-top: 7rem;
       }
 
+      .hero-stats {
+        justify-content: center;
+      }
+
       .hero-buttons {
         justify-content: center;
       }
@@ -415,6 +452,7 @@
     <a href="#" class="nav-logo">&lt;DanielaQuispe <span>/&gt;</span></a>
     <ul class="nav-links">
       <li><a href="#sobre-mi">Sobre Mí</a></li>
+      <li><a href="#metodologia">Metodología</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#contacto">Contacto</a></li>
@@ -423,53 +461,104 @@
 
   <div class="container">
     
-    <!-- Hero Section con foto de perfil -->
+    <!-- Hero Section con Foto de Perfil -->
     <header class="hero">
       <div class="hero-content">
         <div class="badge-status">
-          <i class="fa-solid fa-circle"></i> Disponible para Proyectos
+          <i class="fa-solid fa-circle"></i> Disponible para Proyectos & Pasantías
         </div>
         <h1 class="hero-title">
           Hola, soy <br>
           <span class="gradient-text">Daniela Quispe</span>
         </h1>
         <p class="hero-subtitle">
-          Estudiante de 4.º semestre de Ingeniería en Software en la Universidad Técnica de Ambato (UTA). Especializada en Full-Stack Web Development, Clean Architecture y Bases de Datos.
+          Estudiante de Ingeniería en Software en la Universidad Técnica de Ambato (UTA). Enfocada en el desarrollo web Full-Stack, diseño de bases de datos relacionales y arquitectura de software limpia y escalable.
         </p>
+
+        <!-- Métricas Rápidas -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>4.º / 5.º</h4>
+            <p>Semestre UTA</p>
+          </div>
+          <div class="stat-item">
+            <h4>+6</h4>
+            <p>Proyectos Clave</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Clean Code & Git Flow</p>
+          </div>
+        </div>
+
         <div class="hero-buttons">
           <a href="#proyectos" class="btn btn-primary"><i class="fa-solid fa-code"></i> Ver Proyectos</a>
           <a href="#contacto" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contactar</a>
         </div>
       </div>
 
-      <!-- FOTO DE PERFIL (Para cambiar tu foto, reemplaza la URL dentro de 'src') -->
+      <!-- FOTO DE PERFIL: Mantiene 'foto.jpg' cargada en tu repositorio -->
       <div class="hero-avatar-wrapper">
         <div class="avatar-glow"></div>
-        <img src="foto.jpg" alt="Daniela Quispe" class="avatar-img" id="profile-picture">
+        <img src="foto.jpg" alt="Daniela Quispe" class="avatar-img" onerror="this.src='https://via.placeholder.com/300x300/1a202c/ffffff?text=Daniela+Quispe'">
+      </div>
     </header>
 
     <!-- Sobre Mí -->
     <section id="sobre-mi">
-      <h2 class="section-title"><i class="fa-solid fa-user"></i> Sobre Mí</h2>
-      <p class="section-desc">Detalles de mi perfil académico y enfoque de ingeniería.</p>
+      <h2 class="section-title"><i class="fa-solid fa-user-gear"></i> Sobre Mí & Formación Académica</h2>
+      <p class="section-desc">Mi trayectoria académica, ubicación e intereses profesionales en la ingeniería de software.</p>
       
-      <div class="about-grid">
+      <div class="cards-grid">
         <div class="card">
-          <h3>📌 Información General</h3>
+          <h3>📌 Perfil Profesional</h3>
           <ul>
+            <li><strong>Desarrolladora:</strong> Daniela Quispe</li>
             <li><strong>Ubicación:</strong> Ambato, Ecuador 🇪🇨</li>
             <li><strong>Institución:</strong> Universidad Técnica de Ambato (UTA)</li>
-            <li><strong>Carrera:</strong> Ingeniería en Software (4.º Semestre)</li>
-            <li><strong>Correo:</strong> <code>dquispe1051@uta.edu.ec</code></li>
+            <li><strong>Carrera:</strong> Ingeniería en Software</li>
+            <li><strong>Correo Institucional:</strong> <code>dquispe1051@uta.edu.ec</code></li>
           </ul>
         </div>
         
         <div class="card">
-          <h3>🏛️ Filosofía de Desarrollo</h3>
+          <h3>🎓 Áreas de Especialización</h3>
           <ul>
-            <li><strong>Clean Architecture:</strong> Desacoplamiento en capas (Dominio, Aplicación, Presentación).</li>
-            <li><strong>Patrón MVC:</strong> Controladores organizados y separación de lógica.</li>
-            <li><strong>Buenas Prácticas:</strong> Control de versiones estandarizado con Git Flow y Conventional Commits.</li>
+            <li><strong>Desarrollo Web Full-Stack:</strong> Interfaces reactivas en TypeScript/PHP y servicios backend.</li>
+            <li><strong>Bases de Datos Relacionales:</strong> Modelado ER, scripts DDL/DML, triggers y procedimientos.</li>
+            <li><strong>Redes & Infraestructura:</strong> Simulaciones de tráfico, radioenlaces y seguridad en entornos virtualizados.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodología y Arquitectura -->
+    <section id="metodologia">
+      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Arquitectura & Estándares de Trabajo</h2>
+      <p class="section-desc">Principios de ingeniería aplicados en cada línea de código.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3>📐 Clean Architecture & SOLID</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;">
+            Estructuración desacoplada en capas para garantizar mantenibilidad:
+          </p>
+          <ul style="padding-left: 1rem; list-style: disc;">
+            <li><strong>Domain:</strong> Entidades e interfaces fundamentales.</li>
+            <li><strong>Application:</strong> Casos de uso y lógica de negocio aislada.</li>
+            <li><strong>Presentation:</strong> Vistas, componentes reactivos y guardias de roles.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🔀 Git Flow & Conventional Commits</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;">
+            Control de versiones profesional para trabajo colaborativo:
+          </p>
+          <ul style="padding-left: 1rem; list-style: disc;">
+            <li>Estrategia de ramas (<code>develop</code>, <code>feature/</code>, <code>fix/</code>).</li>
+            <li>Mensajes de commit estandarizados (<code>feat:</code>, <code>fix:</code>, <code>docs:</code>, <code>refactor:</code>).</li>
+            <li>Normalización de bases de datos hasta la Tercera Forma Normal (3FN).</li>
           </ul>
         </div>
       </div>
@@ -477,152 +566,193 @@
 
     <!-- Habilidades Tecnológicas -->
     <section id="habilidades">
-      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Habilidades Técnicas</h2>
-      <p class="section-desc">Tecnologías y herramientas con las que trabajo diariamente.</p>
+      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Stack Tecnológico</h2>
+      <p class="section-desc">Herramientas, lenguajes y entornos de desarrollo que utilizo.</p>
 
       <div class="skills-grid">
         <div class="skill-card">
-          <h4>Frontend</h4>
+          <h4><i class="fa-solid fa-laptop-code"></i> Frontend</h4>
           <div class="skill-tags">
             <span class="tag">TypeScript</span>
             <span class="tag">JavaScript</span>
-            <span class="tag">HTML5 / CSS3</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
             <span class="tag">Bootstrap</span>
             <span class="tag">jQuery EasyUI</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h4>Backend & Lenguajes</h4>
+          <h4><i class="fa-solid fa-server"></i> Backend & Lenguajes</h4>
           <div class="skill-tags">
             <span class="tag">PHP</span>
             <span class="tag">Node.js</span>
             <span class="tag">C#</span>
             <span class="tag">.NET</span>
+            <span class="tag">SQL</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h4>Bases de Datos</h4>
+          <h4><i class="fa-solid fa-database"></i> Bases de Datos</h4>
           <div class="skill-tags">
             <span class="tag">SQL Server</span>
             <span class="tag">MySQL</span>
             <span class="tag">PostgreSQL</span>
-            <span class="tag">Supabase</span>
+            <span class="tag">Supabase (BaaS)</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h4>DevOps & Redes</h4>
+          <h4><i class="fa-solid fa-network-wired"></i> DevOps & Redes</h4>
           <div class="skill-tags">
             <span class="tag">Docker</span>
             <span class="tag">Linux / WSL2</span>
             <span class="tag">Git</span>
+            <span class="tag">XAMPP</span>
             <span class="tag">OMNeT++</span>
             <span class="tag">Packet Tracer</span>
+            <span class="tag">Radio Mobile</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Proyectos Destacados -->
+    <!-- Proyectos Destacados (Con tus datos reales) -->
     <section id="proyectos">
       <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Proyectos Destacados</h2>
-      <p class="section-desc">Selección de mis trabajos académicos y proyectos prácticos.</p>
+      <p class="section-desc">Proyectos académicos y de desarrollo de software en los que he trabajado.</p>
 
       <div class="projects-grid">
         
-        <!-- Proyecto 1 -->
+        <!-- Proyecto 1: Boletería -->
         <div class="card project-card">
           <div>
             <div class="project-header">
-              <h3>🎟️ Boletería (Frontend)</h3>
+              <h3>🎟️ Sistema de Boletería (Frontend)</h3>
               <span class="project-badge badge-dev">En Desarrollo</span>
             </div>
-            <p>Aplicación web frontend para reserva y administración de boletos, gestión de flota de buses y rutas aplicando Clean Architecture.</p>
+            <p>Aplicación web frontend profesional para la reserva de boletos, gestión de rutas de transporte, flotas de buses y distribución de asientos.</p>
+            <ul class="project-features">
+              <li>Diseñado bajo <strong>Clean Architecture</strong> (Dominio, Casos de uso, Composables).</li>
+              <li>Integración con backend serverless en <strong>Supabase / PostgreSQL</strong>.</li>
+              <li>Manejo de rutas protegidas mediante guardias de roles y auditoría.</li>
+            </ul>
           </div>
           <div class="skill-tags">
             <span class="tag">TypeScript</span>
             <span class="tag">Supabase</span>
             <span class="tag">Clean Arch</span>
+            <span class="tag">Git Flow</span>
           </div>
         </div>
 
-        <!-- Proyecto 2 -->
+        <!-- Proyecto 2: DDL/DML Moodle Académico -->
         <div class="card project-card">
           <div>
             <div class="project-header">
-              <h3>🗄️ Esquemas & Scripts BD</h3>
+              <h3>🗄️ Esquema BD para Moodle Académico</h3>
               <span class="project-badge badge-done">Completado</span>
             </div>
-            <p>Diseño y administración de bases de datos relacionales normalizadas (3FN), triggers de auditoría, vistas y procedimientos almacenados.</p>
+            <p>Diseño e implementación del script base <code>initial_schema.sql</code> en SQL Server para un sistema integrado a plataformas educativas.</p>
+            <ul class="project-features">
+              <li>Modelado para usuarios, cursos, actividades, notas y asignaciones temáticas.</li>
+              <li>Implementación de triggers de auditoría, vistas optimizadas y procedimientos.</li>
+              <li>Normalización relacional hasta 3FN y restricciones de integridad.</li>
+            </ul>
           </div>
           <div class="skill-tags">
             <span class="tag">SQL Server</span>
             <span class="tag">MySQL</span>
             <span class="tag">DDL/DML</span>
+            <span class="tag">Triggers</span>
           </div>
         </div>
 
-        <!-- Proyecto 3 -->
+        <!-- Proyecto 3: CRUD PHP MVC -->
         <div class="card project-card">
           <div>
             <div class="project-header">
-              <h3>💻 Sistema Web CRUD (MVC)</h3>
+              <h3>💻 Gestión de Registros Web (MVC)</h3>
               <span class="project-badge badge-done">Completado</span>
             </div>
-            <p>Plataforma para gestión de registros con modales dinámicos e interfaz enriquecida con componentes reactivos.</p>
+            <p>Sistema web para la administración de registros de estudiantes con interfaz enriquecida y componentes interactivos.</p>
+            <ul class="project-features">
+              <li>Desarrollado en <strong>PHP nativo</strong> bajo el patrón Modelo-Vista-Controlador.</li>
+              <li>Modales interactivos con Bootstrap y datagrids reactivos con jQuery EasyUI.</li>
+              <li>Consultas SQL optimizadas y gestión de sesiones seguras.</li>
+            </ul>
           </div>
           <div class="skill-tags">
             <span class="tag">PHP</span>
             <span class="tag">MySQL</span>
             <span class="tag">Bootstrap</span>
+            <span class="tag">jQuery EasyUI</span>
           </div>
         </div>
 
-        <!-- Proyecto 4 -->
+        <!-- Proyecto 4: OMNeT++ Redes -->
         <div class="card project-card">
           <div>
             <div class="project-header">
-              <h3>🌐 Simulación de Redes</h3>
+              <h3>🌐 Simulación de Tráfico de Redes</h3>
               <span class="project-badge badge-done">Completado</span>
             </div>
-            <p>Modelado del rendimiento de redes CSMA/CD en OMNeT++, radioenlaces en Radio Mobile y WLC con APs en Packet Tracer.</p>
+            <p>Análisis comparativo de rendimiento de red ejecutado en el entorno de simulación OMNeT++.</p>
+            <ul class="project-features">
+              <li>Evaluación de topologías en bus cableado (<strong>CSMA/CD</strong>) e inalámbricas (<strong>CSMA/CA</strong>).</li>
+              <li>Cálculo directo de throughput total, tasa de colisión y paquetes descartados.</li>
+              <li>Documentación y guía metodológica de setup de escenarios en INET.</li>
+            </ul>
           </div>
           <div class="skill-tags">
             <span class="tag">OMNeT++</span>
-            <span class="tag">Packet Tracer</span>
+            <span class="tag">INET</span>
+            <span class="tag">CSMA/CD</span>
+            <span class="tag">Redes</span>
           </div>
         </div>
 
-        <!-- Proyecto 5 -->
+        <!-- Proyecto 5: Radioenlaces Radio Mobile -->
         <div class="card project-card">
           <div>
             <div class="project-header">
-              <h3>🔒 Seguridad en Redes</h3>
+              <h3>📡 Radioenlace Punto a Punto (Tena-Chontapunta)</h3>
+              <span class="project-badge badge-done">Completado</span>
+            </div>
+            <p>Simulación del perfil de un enlace de radioenlace utilizando el software Radio Mobile en la región amazónica de Ecuador.</p>
+            <ul class="project-features">
+              <li>Modelado de antena sectorial <strong>airMAX LiteAP AC (LAP-120)</strong>.</li>
+              <li>Análisis de zona de Fresnel, pérdidas por propagación y margen de desvanecimiento.</li>
+              <li>Mapeo topográfico del enlace entre las localidades de Tena y Chontapunta.</li>
+            </ul>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Radio Mobile</span>
+            <span class="tag">LAP-120</span>
+            <span class="tag">Telecom</span>
+          </div>
+        </div>
+
+        <!-- Proyecto 6: FreeRADIUS / Packet Tracer -->
+        <div class="card project-card">
+          <div>
+            <div class="project-header">
+              <h3>🔒 Seguridad Wireless & Servidor AAA</h3>
               <span class="project-badge badge-research">Investigación</span>
             </div>
-            <p>Pruebas de configuración de servidores de autenticación FreeRADIUS en Ubuntu VM y auditorías wireless con hostapd-wpe.</p>
+            <p>Configuración de infraestructura de red inalámbrica administrada y pruebas de autenticación centralizada.</p>
+            <ul class="project-features">
+              <li>Configuración de servidor <strong>FreeRADIUS</strong> en máquina virtual Ubuntu vía PuTTY.</li>
+              <li>Configuración de Wireless LAN Controller (WLC) y pareo de APs ligeros en Packet Tracer.</li>
+              <li>Análisis de seguridad y auditoría wireless con herramientas hostapd-wpe.</li>
+            </ul>
           </div>
           <div class="skill-tags">
             <span class="tag">FreeRADIUS</span>
+            <span class="tag">Packet Tracer</span>
             <span class="tag">Ubuntu VM</span>
-          </div>
-        </div>
-
-        <!-- Proyecto 6 -->
-        <div class="card project-card">
-          <div>
-            <div class="project-header">
-              <h3>🏺 Algoritmos BFS (Jarras)</h3>
-              <span class="project-badge badge-done">Completado</span>
-            </div>
-            <p>Implementación del algoritmo de Búsqueda en Anchura (BFS) para resolver el clásico problema de las jarras de agua.</p>
-          </div>
-          <div class="skill-tags">
-            <span class="tag">C#</span>
-            <span class="tag">.NET</span>
-            <span class="tag">Algoritmos</span>
+            <span class="tag">PuTTY</span>
           </div>
         </div>
 
@@ -638,8 +768,8 @@
         <h3 style="justify-content: center; font-size: 1.5rem; margin-bottom: 1rem;">
           <span class="gradient-text">¡Hablemos de Software!</span>
         </h3>
-        <p style="color: var(--text-muted); margin-bottom: 2rem;">
-          Puedes comunicarte directamente conmigo a través de mi correo institucional.
+        <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Estoy disponible para colaboraciones en proyectos web, desarrollo de bases de datos o pasantías profesionales.
         </p>
         <a href="mailto:dquispe1051@uta.edu.ec" class="btn btn-primary">
           <i class="fa-solid fa-envelope"></i> dquispe1051@uta.edu.ec
